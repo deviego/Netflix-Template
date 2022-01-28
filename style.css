@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    color: white;
+}
+header{
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1390px;
+    top: 28px;
+    left: 50px;
+    
+
+}
+a{
+    display: inline-block;
+
+    color: white;
+    font-family: sans-serif;
+    background: #e50914;
+
+    align-self: center;
+    padding: 8px 18px;
+
+    border-radius: 3px;
+
+    text-decoration: none;
+    
+
+}
+
+main{
+    width: 100%;
+    height: 785px;
+   
+    background: url("img/bg.jpg") center;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    text-align: center;
+   
+    position: relative;
+}
+
+section{
+    z-index: 1;
+    
+}
+
+h1{
+    font-size: 50px;
+    max-width: 480px;
+    text-align: center;
+    
+}
+h2{
+    font-size: 26px;
+    margin: 1rem auto;
+
+}
+p{
+    font-size: 19;
+   
+}
+
+/* @media only screen and (min-width: 950px) and (max-width: 1449px), only screen and (min-width: 1450px) */
+form {
+    display:grid;
+    grid-template-columns: 500px 250px;
+    margin-top: 30px;
+
+
+}
+
+ .input{
+
+    /* height: 48px;
+    width: 500px; */
+    padding: 20px 10px ;
+
+    font-size: 16px;
+    font-family: sans-serif;
+    border: solid 1px #8c8c8c;
+    border-radius: 2px;
+    
+    appearance: none;
+}
+button{
+     /* height: 48px;
+    width:100%; */
+    font-size: 1.625rem;
+    background: #f00d0d;
+    outline:none;
+    border: none;
+    color: wheat;
+    text-transform: uppercase;
+    cursor: pointer;
+   
+}
+button::after{
+    content: "";
+    display: inline-block;
+    width: 9px;
+    height: 19px;
+    background: url("img/seta.svg");
+    margin-left: 20px;
+}
+
+button:hover{
+    background:#f40612 ;
+}
+
+.gradient{
+    background: rgb(0, 0, 0, 0.4 );
+    background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+    position:absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
