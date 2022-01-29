@@ -1,29 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Netflix</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <header>
-        <img src="img/netflix.svg" alt="Netflix"draggable="false">
-        <a href="#"  draggable="false">Entrar</a>
+      <img src="img/netflix.svg" alt="Netflix" draggable="false" />
+      <a href="#" draggable="false">Entrar</a>
     </header>
     <main>
-        <section> 
-            <h1>Filmes, séries e muito mais. Sem limites.</h1>
-            <h2>Assista onde quiser. Cancele quando quiser.</h2>
-            <p>Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
-            <form>
-                <input type="email" placeholder="Email" class="input">
-                <button>Vamos lá</button>
-            </form>
-        </section>
-       
-        <div class="gradient"> </div>
-</body>
+      <div class="email-loguin">
+        <h1>Filmes, séries e muito mais. Sem limites.</h1>
+        <h2>Assista onde quiser. Cancele quando quiser.</h2>
+        <p>
+          Pronto para assistir? Informe seu email para criar ou reiniciar sua
+          assinatura.
+        </p>
+        <form>
+          <input type="email" placeholder="Email" class="input" />
+          <button>Vamos lá</button>
+        </form>
+      </div>
+
+      <div class="gradient"></div>
+    </main>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid">
+          <div>
+            <h1>Aproveite na TV.</h1>
+            <p>
+              Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV,
+              aparelhos de Blu-ray e outros dispositivos.
+            </p>
+          </div>
+          <div class="img-tv">
+            <img src="img/tv.png" alt="tv Netflix" />
+            <video autoplay playsinline muted loop>
+              <source
+                src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v"
+              />
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-dowload">
+      <div class="container">
+        <div class="grid">
+          <div class="text-info">
+            <h1>Baixe séries para assistir offline.</h1>
+            <h2>
+                Salve seus títulos favoritos e sempre tenha algo para assistir.
+            </h2>
+          </div>
+          <div class="img-tv">
+            <img src="img/el.jpg" alt="tv Netflix" />
+            <div class="cardanimation">
+                <div class="cardanimation-img">
+                    <img src="img/boxshot.png" alt="stranger things">
+                </div>
+                <div class="cardanimation-text">
+                    <h2>Stranger Things</h2>
+                    <p>Download em andamento...</p>
+                </div>
+                <div class="animation-icon"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="grid">
+          <div>
+            <h1>Assista quando quiser.</h1>
+            <p>
+                Assista no celular, tablet, Smart TV ou notebook sem pagar a mais por isso.
+            </p>
+          </div>
+          <div class="img-tv">
+            <img src="img/tv.png" alt="tv Netflix" />
+            <video autoplay playsinline muted loop>
+              <source
+                src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v"
+              />
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="grid">
+          <div>
+            <h1>Crie perfis para crianças.</h1>
+            <p>
+                Deixe as crianças se aventurarem com seus personagens favoritos em um espaço feito só para elas, sem pagar a mais por isso.
+            </p>
+          </div>
+          <div class="img-infantil">
+            <img src="img/infantil.png" alt="tv Netflix" />
+           
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
