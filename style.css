@@ -268,3 +268,47 @@ video{
     
     
 }
+
+.section-portable .video-tv{
+    width: 340px ;
+    top: 50px;
+    left: 100px;
+
+}
+.section-kids{
+    display: flex;
+}
+
+.section-kids .grid > div:first-child{
+    order: 2;
+}
+
+.section-kids .img-tv{
+    order: 1;
+    margin-right: 16px;
+}
+
+
+
+footer{
+    background: black;
+    text-align: center;
+
+    border-top: #222 8px solid;
+    padding: 4rem 0 2rem;
+
+
+    display: grid;
+    justify-content: center;
+
+}
+footer form{
+    margin: 0;
+   
+}
+
+footer p{
+    margin-top: 2rem;
+    color: #757575;
+    font-size: 13px;
+}
