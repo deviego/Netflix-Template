@@ -1,53 +1,90 @@
+/*Root da página*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+html{
+    font-size: 62.5%;
+}
 body{
     font-family: sans-serif;
     color: white;
+    width: 100%;
 }
 img{
     display: block;
     max-width: 100%;
 }
 .container{
-    max-width: 1130px;
+    width: 100%;
+    max-width: 113.0rem; 
     margin: 0 auto;
 }
-
+/*parte do header e navegação*/
 header{
     position: absolute;
     z-index: 100;
     width: 100%;
+    padding: 15px;
+  
+}
+.nav{
+    
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    max-width: 1390px;
-    top: 28px;
-    left: 50px;
-    
-
 }
 a{
-    display: inline-block;
+   
 
     color: white;
     font-family: sans-serif;
     background: #e50914;
 
+    font-size: 1.6em;    
+    font-weight: 400;
+
     align-self: center;
-    padding: 8px 18px;
+    padding: 7px 17px;
 
     border-radius: 3px;
 
     text-decoration: none;
+ 
     
 
 }
 
+/*Button*/
+button{
+    /* height: 48px;
+   width:100%; */
+   font-size: 1.625rem;
+   background: #f00d0d;
+   outline:none;
+   border: none;
+   color: wheat;
+   text-transform: uppercase;
+   cursor: pointer;
+  
+}
+button::after{
+   content: "";
+   display: inline-block;
+   width: 10px;
+   height: 19px;
+   background: url("img/seta.svg");
+   margin-left: 20px;
+}
+
+button:hover{
+   background:#f40612 ;
+}
+
+/*email login*/ 
 main{
-    width: 100%;
+    width: auto;
     height: 785px;
    
     background: url("img/bg.jpg") center;
@@ -56,36 +93,32 @@ main{
     align-items: center;
     justify-content: center;
    
-    text-align: center;
-   
     position: relative;
 }
-
-.email-loguin{
+.email-login{
     z-index: 1;
     
 }
 
-.email-loguin h1{
-    font-size: 50px;
+.text-login{
+    text-align: center;
+}
+
+.text-login h1{
+    font-size: 5.0em;
     max-width: 640px;
     text-align: center;
+    margin: 1rem auto;
     
 }
-h2{
-    font-size: 26px;
-    margin: 1rem auto;
-
-}
-p{
-    font-size: 19;
-   
+.text-login p{
+    font-size: 1.6em;
 }
 
 /* @media only screen and (min-width: 950px) and (max-width: 1449px), only screen and (min-width: 1450px) */
 form {
     display:grid;
-    grid-template-columns: 500px 250px;
+    grid-template-columns: 50rem 25rem;
     margin-top: 30px;
 
 
@@ -97,36 +130,12 @@ form {
     width: 500px; */
     padding: 20px 10px ;
 
-    font-size: 16px;
+    font-size: 1.6em;
     font-family: sans-serif;
     border: solid 1px #8c8c8c;
     border-radius: 2px;
     
     appearance: none;
-}
-button{
-     /* height: 48px;
-    width:100%; */
-    font-size: 1.625rem;
-    background: #f00d0d;
-    outline:none;
-    border: none;
-    color: wheat;
-    text-transform: uppercase;
-    cursor: pointer;
-   
-}
-button::after{
-    content: "";
-    display: inline-block;
-    width: 10px;
-    height: 19px;
-    background: url("img/seta.svg");
-    margin-left: 20px;
-}
-
-button:hover{
-    background:#f40612 ;
 }
 
 .gradient{
@@ -139,35 +148,44 @@ button:hover{
     bottom: 0;
 }
 
+/*Section and grids*/
+
+
 section{
     background:black ;
     padding: 4rem 0;
     border-top: solid 8px #222;
     
 }
-
-section h1{
-    font-size: 50px;
-    margin-bottom: 10px;
-}
-
-section p{
-    font-size: 26px;
-
-}
-
 .grid{
     display: grid;
     grid-template-columns: 1.1fr 1fr;
     align-items: center;
 
 }
-.img-tv{
+/*text information*/
+.text-info{
+    margin: 0  10px;
+}
+
+.text-info h1{
+    font-size: 5.0em;
+    margin-bottom: 10px;
+}
+
+.text-info p{
+    font-size: 2em;
+    font-weight: 400;
+
+}
+
+/*img sections*/ 
+.config-img{
     position:relative;
 }
-.img-tv img{
-    position: relative;
+.config-img img{
     z-index: 1;
+    position: relative;
 }
 video{
     position: absolute;
@@ -183,27 +201,16 @@ video{
     order: 2;
 }
 
-.section-dowload .img-tv{
+.section-dowload{
     order: 1;
 
 }
-.section-dowload .img-tv img{
+.section-dowload img{
     max-width: 100%;
     height: auto;
     border: 0;
 }
 
-.section-dowload .text-info{
-    padding-left: 48px;
-}
-
-.section-dowload h1{
-    display: block;
-    font-size: 50px;
-    line-height: 1.1;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-}
 
 .section-dowload h2{
     font-size: 1.625rem;
@@ -243,19 +250,19 @@ video{
 
 .cardanimation-text h2{
     margin: 4.8px 0;
-    font-size: 1em;
+    font-size: 1.5em;
     color:#fff;
     font-weight: 600;
 }
 
 .cardanimation-text p{
     color: #0071eb;
-    font-size: .9em;
+    font-size: 1em;
     font-weight: 400;
 }
 
 .animation-icon{
-    width: 3em;
+    width: 4em;
     height: 3em;
     outline: 2px solid #000;
     outline-offset: -2px;
@@ -275,20 +282,18 @@ video{
     left: 100px;
 
 }
-.section-kids{
-    display: flex;
-}
+
 
 .section-kids .grid > div:first-child{
     order: 2;
 }
 
-.section-kids .img-tv{
+.section-kids{
     order: 1;
     margin-right: 16px;
 }
 
-
+/*footer and login*/
 
 footer{
     background: black;
@@ -312,3 +317,6 @@ footer p{
     color: #757575;
     font-size: 13px;
 }
+
+
+

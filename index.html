@@ -9,37 +9,42 @@
   </head>
   <body>
     <header>
-      <img src="img/netflix.svg" alt="Netflix" draggable="false" />
-      <a href="#" draggable="false">Entrar</a>
+      <div class="nav">
+        <img src="img/netflix.svg" alt="Netflix" draggable="false" />
+        <a href="#" draggable="false" class="login">Entrar</a>
+      </div>
     </header>
     <main>
-      <div class="email-loguin">
-        <h1>Filmes, séries e muito mais. Sem limites.</h1>
-        <h2>Assista onde quiser. Cancele quando quiser.</h2>
-        <p>
-          Pronto para assistir? Informe seu email para criar ou reiniciar sua
-          assinatura.
-        </p>
-        <form>
+      <div class="email-login">
+        <div class="text-login">
+          <h1>Filmes, séries e muito mais. Sem limites.</h1>
+          <h2>Assista onde quiser. Cancele quando quiser.</h2>
+          <p>
+            Pronto para assistir? Informe seu email para criar ou reiniciar sua
+            assinatura.
+          </p>
+        </div>
+        <div class="form"><form>
           <input type="email" placeholder="Email" class="input" />
           <button>Vamos lá</button>
-        </form>
+        </form></div>
+        
       </div>
 
       <div class="gradient"></div>
     </main>
 
-    <section class="section">
+    <section class="section-tv">
       <div class="container">
         <div class="grid">
-          <div>
+          <div class="text-info">
             <h1>Aproveite na TV.</h1>
             <p>
               Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV,
               aparelhos de Blu-ray e outros dispositivos.
             </p>
           </div>
-          <div class="img-tv">
+          <div class="config-img">
             <img src="img/tv.png" alt="tv Netflix" />
             <video autoplay playsinline muted loop>
               <source
@@ -55,11 +60,11 @@
         <div class="grid">
           <div class="text-info">
             <h1>Baixe séries para assistir offline.</h1>
-            <h2>
+            <p>
               Salve seus títulos favoritos e sempre tenha algo para assistir.
-            </h2>
+            </p>
           </div>
-          <div class="img-tv">
+          <div class="config-img">
             <img src="img/el.jpg" alt="tv Netflix" />
             <div class="cardanimation">
               <div class="cardanimation-img">
@@ -78,14 +83,14 @@
     <section class="section-portable">
       <div class="container">
         <div class="grid">
-          <div>
+          <div class="text-info">
             <h1>Assista quando quiser.</h1>
             <p>
               Assista no celular, tablet, Smart TV ou notebook sem pagar a mais
               por isso.
             </p>
           </div>
-          <div class="img-tv">
+          <div class="config-img">
             <img src="img/device-pile.png" alt="device plataform" />
             <video class="video-tv" autoplay playsinline muted loop>
               <source
@@ -99,7 +104,7 @@
     <section class="section-kids">
       <div class="container">
         <div class="grid">
-          <div class="kids-text">
+          <div class="text-info">
             <h1>Crie perfis para crianças.</h1>
             <p>
               Deixe as crianças se aventurarem com seus personagens favoritos em
@@ -118,7 +123,7 @@
         <input type="email" placeholder="Email" class="input" />
         <button>Vamos lá</button>
       </form>
-      <p>Copyryght-© 2022 Netflix Brasil -Deviego </p>
+      <p>Copyryght-© 2022 Netflix Brasil -Deviego</p>
     </footer>
   </body>
 </html>
