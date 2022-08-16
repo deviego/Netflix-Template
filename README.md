@@ -35,5 +35,5 @@ example with iPad Air
 
 ![responsividade iphone](https://user-images.githubusercontent.com/73961367/161403282-964010c4-fc32-4036-b8c1-e5d6310a9fa9.gif)
 
-example with iPhone X
+example with iPhone 
 #
